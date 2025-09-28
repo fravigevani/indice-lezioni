@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Indice Lezioni</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      width: 100vw;
+      font-family: 'Helvetica Neue', 'Segoe UI', sans-serif;
+      background-color: rgb(33, 33, 33);
+      overflow: hidden;
+    }
+
+    h1 {
+      text-align: left;
+      font-size: 8em;
+      margin: 5vh;
+      color: #F46036;
+      font-family: anton, 'BAYON';
+    }
+
+    .months-wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 80vh;
+      padding-left: 2vw;
+      gap: 2vh;
+    }
+
+    .month-block {
+      display: flex;
+      border-radius: 1em;
+      height: 18vh;
+      min-height: 150px;
+      align-items: center;
+      border: #F46036;
+      padding: 1em;
+        border: 2px solid #F46036;
+    }
+
+    .month-label {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-size: 2em;
+      font-weight: bold;
+      color: #F46036;
+      margin-right: 2vw;
+      text-align: center;
+      letter-spacing: 0.1em;
+    }
+
+    .lessons-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1vw;
+      flex: 1;
+    }
+
+    .lesson {
+      background-color: #C5EFCB;
+      padding: 1em;
+      border-radius: 0.5em;
+      box-shadow: 0 0.3em 0.6em rgba(0,0,0,0.1);
+      font-size: 1.2em;
+      min-width: 150px;
+      flex-grow: 1;
+      transition: transform 0.2s;
+    }
+
+    .lesson:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Informatica applicata</h1>
+
+  <div class="months-wrapper">
+    <!-- Settembre -->
+    <div class="month-block">
+      <div class="month-label">SET</div>
+      <div class="lessons-container">
+        <div class="lesson" id="lezione1">Lezione 1</div>
+        <div class="lesson" id="lezione2">Lezione 2</div>
+      </div>
+    </div>
+
+    <!-- Ottobre -->
+    <div class="month-block">
+      <div class="month-label">OTT</div>
+      <div class="lessons-container">
+        <div class="lesson" id="lezione3">Lezione 3</div>
+        <div class="lesson" id="lezione4">Lezione 4</div>
+        <div class="lesson" id="lezione5">Lezione 5</div>
+      </div>
+    </div>
+
+    <!-- Novembre -->
+    <div class="month-block">
+      <div class="month-label">NOV</div>
+      <div class="lessons-container">
+        <div class="lesson" id="lezione6">Lezione 6</div>
+        <div class="lesson" id="lezione7">Lezione 7</div>
+        <div class="lesson" id="lezione8">Lezione 8</div>
+      </div>
+    </div>
+
+    <!-- Dicembre -->
+    <div class="month-block">
+      <div class="month-label">DIC</div>
+      <div class="lessons-container">
+        <div class="lesson" id="lezione9">Lezione 9</div>
+        <div class="lesson" id="lezione10">Lezione 10</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

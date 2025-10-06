@@ -1,6 +1,5 @@
-// ----------------------------------------------------
-// 🌼 VARIABILI GLOBALI
-// ----------------------------------------------------
+
+// VARIABILI GLOBALI
 
 // Coordinate dell'ape principale
 let x = 0;
@@ -57,7 +56,7 @@ function setup() {
 
 
 
-// 🌤️ DRAW — eseguito in loop ogni frame
+// DRAW — eseguito in loop ogni frame
 function draw() {
   background(135, 206, 235); // cielo azzurro
 
@@ -87,7 +86,7 @@ function draw() {
 }
 
 
-// 🌺 FUNZIONI PER I FIORI
+// FUNZIONI PER I FIORI
 function drawFlowers() {
   for (let f of flowers) {
     // Movimento oscillante (brezza)

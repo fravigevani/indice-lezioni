@@ -19,6 +19,7 @@ function draw() {
   // stringa, x, y
   text("mouseX: "+ mouseX + ", mouseY: " + mouseY,20, 20);
 
+
   // disegnare le stelle 
   // 120 
   // tre tipi di stelle: a, b, c
@@ -51,7 +52,6 @@ function draw() {
       fill(255,255,100);
       circle (x, y, 2.8); //2.8
     }
-
     }
 
     // contesto di disegno (per isolare)

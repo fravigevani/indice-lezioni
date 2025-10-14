@@ -19,7 +19,7 @@ function preload() {
 
 function setup() {
   createCanvas(xMax, yMax);
-  frameRate(20);
+  frameRate(5);
 }
 
 function drawStarsFromFile() {
@@ -99,7 +99,33 @@ function draw() {
   xRocket = (xRocket +1) % xMax;
   yRocket = moveRocket(yRocket); 
 
+  let isover=false;
+  if(isMouseOverRocket()) {
+    isover=true
+  }else{
+    isover=false;
+  }
+  text("Is over the rocket? ")
+
   //tempo += 1;
   
 
+}
+
+function isMouseOverRocket(){
+  return(mouseX > xRocket-(rocketWidth/2)&&
+        mouseX < xRocket + (rocketWidth/2)&&
+        mouseY > yRocket -(rocketHeight/2)&&
+        mouseY < yRocket +(rocketHeight/2))
+}
+
+function mousePressed(){
+  // fermiamo l'animazione o la rifacciamo partire
+  // se clicchiamo il mouse
+
+  if(isLooping()){
+    noLoop();
+  }else{
+    loop();
+  }
 }
